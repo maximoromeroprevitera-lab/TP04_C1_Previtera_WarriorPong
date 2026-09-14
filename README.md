@@ -1,2 +1,41 @@
-# TP04_C1_Previtera_WarriorPong
-# Pong - TP4  ## English Version  ### Description  Face off in a Pong match to prove who is the greatest warrior. Prevent your opponent from placing bombs at your Toorii gate and emerge victorious.  The game features two players, customizable game settings, a pause menu, a victory system, and several gameplay mechanics.  ### Controls  #### Player 1  * **W / S:** Move vertically * **A / D:** Move horizontally  #### Player 2  * **Arrow Up / Arrow Down:** Move vertically * **Arrow Left / Arrow Right:** Move horizontally  ### Other Controls  * **ESC:** Open/close the pause menu  ### Gameplay Mechanics  * The ball increases its speed after hitting a player. * Players change to a random color when they hit the ball. * The ball changes color every time it is hit. * Players cannot cross the center line. * The ball can pass through the center line. * A time limit determines how long the ball can remain on one side of the court. * If the time limit is reached, the player on the opposite side scores a point. * The number of victories required to win can be configured from the Settings menu. * After a goal, the ball is reset and its speed returns to its initial value.  ### Menus  The game includes:  * Main Menu * Pause Menu * Settings * Credits * Victory Screen  ### Settings  The Settings menu allows the players to customize different game parameters, including:  * Victory condition * Time limit * Player speed * Player size * Player colors  Game settings are managed using a **Scriptable Object** so they can be shared between different systems.  ### Victory System  The game keeps track of the score for both players.  The victory condition can be changed from the Settings menu. Once a player reaches the configured number of victories, the Victory Screen is displayed.  ### Project Structure  The project is organized into separate scripts for different gameplay features, including:  * Player movement * Ball movement * Ball velocity * Goal management * Goal timer * Player color changes * Ball color changes * Pause menu * Game settings * Victory system  ### Technology  * **Unity** * **C#** * **Unity 2D Physics** * **Rigidbody2D** * **Animator** * **Scriptable Objects** * **TextMeshPro**  ### How to Run  1. Open the project in Unity. 2. Open the **MainMenu** scene. 3. Press **Play**. 4. Select the desired game settings. 5. Start the game and play against the other player.  ### Project  This project was created as part of a programming/game development assignment.  ---  # Versión en Español  ## Descripción  Enfrentate en una partida de Pong para saber quién es el mejor guerrero, evita que el rival ponga las bombas en tu puerta Toorii y triunfa sobre él.  El juego cuenta con dos jugadores, configuraciones personalizables, un menú de pausa, un sistema de victoria y diferentes mecánicas de juego.  ## Controles  ### Jugador 1  * **W / S:** Movimiento vertical * **A / D:** Movimiento horizontal  ### Jugador 2  * **Flecha Arriba / Flecha Abajo:** Movimiento vertical * **Flecha Izquierda / Flecha Derecha:** Movimiento horizontal  ### Otros controles  * **ESC:** Abrir/cerrar el menú de pausa  ## Mecánicas de juego  * La pelota aumenta su velocidad después de golpear a un jugador. * Los jugadores cambian a un color aleatorio cuando golpean la pelota. * La pelota cambia de color cada vez que es golpeada. * Los jugadores no pueden atravesar la línea central. * La pelota puede atravesar la línea central. * Existe un límite de tiempo que determina cuánto puede permanecer la pelota en un lado de la cancha. * Si se alcanza el límite de tiempo, el jugador del lado contrario obtiene un punto. * La cantidad de victorias necesarias para ganar puede configurarse desde el menú de Settings. * Después de un gol, la pelota se reinicia y su velocidad vuelve a su valor inicial.  ## Menús  El juego incluye:  * Menú Principal * Menú de Pausa * Configuración * Créditos * Pantalla de Victoria  ## Configuración  El menú de Settings permite a los jugadores personalizar diferentes parámetros del juego, incluyendo:  * Condición de victoria * Límite de tiempo * Velocidad de los jugadores * Tamaño de los jugadores * Colores de los jugadores  Las configuraciones del juego se gestionan mediante un **Scriptable Object**, lo que permite compartir estos valores entre diferentes sistemas.  ## Sistema de Victoria  El juego lleva un registro del puntaje de ambos jugadores.  La condición de victoria puede modificarse desde el menú de Settings. Cuando un jugador alcanza la cantidad de victorias configurada, se muestra la Pantalla de Victoria.  ## Estructura del proyecto  El proyecto está organizado en diferentes scripts para manejar las distintas funcionalidades del juego, incluyendo:  * Movimiento de los jugadores * Movimiento de la pelota * Velocidad de la pelota * Gestión de goles * Temporizador de goles * Cambio de color de los jugadores * Cambio de color de la pelota * Menú de pausa * Configuración del juego * Sistema de victoria  ## Tecnología  * **Unity** * **C#** * **Unity 2D Physics** * **Rigidbody2D** * **Animator** * **Scriptable Objects** * **TextMeshPro**  ## Cómo ejecutar el juego  1. Abrir el proyecto en Unity. 2. Abrir la escena **MainMenu**. 3. Presionar **Play**. 4. Seleccionar las configuraciones deseadas. 5. Iniciar el juego y jugar contra el otro jugador.  ## Proyecto  Este proyecto fue desarrollado como parte de un trabajo práctico de programación y desarrollo de videojuegos.
+# Pong - TP4
+
+## English
+
+### Description
+
+Face off in a warrior Pong duel to find out who is the best.
+
+### Controls
+
+* **Player 1:** W / S + A / D
+* **Player 2:** Arrow Keys
+* **ESC:** Pause
+
+### Mechanics
+
+* Ball speed increases on hits.
+* Ball and players change color on hits.
+* Players cannot cross the center line.
+* Configurable victory score and goal timer.
+
+---
+
+## Español
+
+### Descripción
+
+Enfrentate en un duelo Pong de guerreros para saber quién es el mejor.
+
+### Controles
+
+* **Jugador 1:** W / S + A / D
+* **Jugador 2:** Flechas
+* **ESC:** Pausa
+
+### Mecánicas
+
+* La pelota aumenta su velocidad al recibir golpes.
+* La pelota y los jugadores cambian de color al golpear.
+* Los jugadores no pueden cruzar la línea central.
+* Puntaje de victoria y temporizador de gol configurables.
