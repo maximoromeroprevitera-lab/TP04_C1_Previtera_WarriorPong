@@ -1,0 +1,4 @@
+repository "TP04_C1_Previtera_WarriorPong/TP04_C1_Previtera_WarriorPong@4674235988700@cloud"
+  path "/"
+    br "/main"
+    co "/main"
