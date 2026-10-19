@@ -21,6 +21,8 @@ public class BallVelocity : MonoBehaviour
     void FixedUpdate()
     {
         // Si el juego está pausado, no modificamos la velocidad
+        // Warning: comparar Time.timeScale con == contra 0 es comparar dos floats. Además, con timeScale en 0 el FixedUpdate directamente no corre, así que el chequeo no hace falta.
+        // Borrá las dos líneas.
         if (Time.timeScale == 0)
             return;
 
@@ -30,6 +32,8 @@ public class BallVelocity : MonoBehaviour
             rb.linearVelocity = rb.linearVelocity.normalized * speed;
         }
     }
+    // Warning: la velocidad sube 10 en cada golpe y no hay ningún tope. Arranca en 80, así que a los veinte golpes va a 280 y la pelota se mueve más de lo que mide el collider entre frame y frame: la atraviesa sin rebotar.
+    // Acotalo: speed = Mathf.Min(speed + speedIncrease, maxSpeed), con maxSpeed serializado.
     public void IncreaseSpeed()
     {
         speed += speedIncrease;

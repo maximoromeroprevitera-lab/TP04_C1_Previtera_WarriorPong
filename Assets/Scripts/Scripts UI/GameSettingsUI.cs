@@ -21,6 +21,8 @@ public class GameSettingsUI : MonoBehaviour
         {
             if (newTime > 0)
             {
+                // Warning: el panel escribe directo sobre el ScriptableObject. En el editor eso queda grabado en GameSettings.asset entre sesiones, así que el proyecto se entrega con el último valor que probaste.
+                // Copiá el SO a un estado de partida al empezar y modificá esa copia, o dejá los campos [SerializeField] private y exponé un Set que valide el rango.
                 gameSettings.goalTimeLimit = newTime;
 
                 Debug.Log("Nuevo tiempo para gol: " + gameSettings.goalTimeLimit);

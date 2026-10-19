@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
+        // Suggestion: "Game" escrito a mano acá y en Playbutton.cs:11. Si renombrás la escena, el proyecto compila igual y falla recién en runtime.
+        // Declaralo como const string en una clase compartida.
         SceneManager.LoadScene("Game");
     }
 

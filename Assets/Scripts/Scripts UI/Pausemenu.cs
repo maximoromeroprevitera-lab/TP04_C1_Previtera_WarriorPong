@@ -10,6 +10,8 @@ public class Pausemenu : MonoBehaviour
 
     void Update()
     {
+        // Bug: Escape solo llama a Pause(). No hay forma de despausar con la misma tecla: hay que ir sí o sí al botón Continue.
+        // Alcanza con un bool isPaused y un if: if (isPaused) Continue(); else Pause();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
